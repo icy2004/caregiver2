@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:text="HELP!는 정확성 높은 시스템을\n통해 가장 적합한 간병인을\n추천해 드립니다.!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="아래의 질문에 체크해주세요."
+        android:layout_marginTop="26dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="1. 선호하는 간병인의 성별은?"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <RadioButton android:id="@+id/check_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남성"
+            android:layout_gravity="center_vertical"
+            android:checked="true"/>
+        <RadioButton android:id="@+id/check_f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="2. 선호하는 간병인의 나이대는?"/>
+    <RadioGroup android:id="@+id/age_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <RadioButton android:id="@+id/age_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20 ~ 30"
+            android:layout_gravity="center_vertical"
+            android:checked="true"/>
+        <RadioButton android:id="@+id/age_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 ~ 40"
+            android:layout_gravity="center_vertical"/>
+        <RadioButton android:id="@+id/age_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40 ~ 50"
+            android:layout_gravity="center_vertical"/>
+        <RadioButton android:id="@+id/age_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 ~ 60"
+            android:layout_gravity="center_vertical"/>
+        <RadioButton android:id="@+id/age_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 ~ 70"
+            android:layout_gravity="center_vertical"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:onClick="onClickConfirm"/>
+</LinearLayout>

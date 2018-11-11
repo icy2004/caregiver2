@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div"/>
+    <View android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/home_tab_text_gray"
+        android:layout_above="@+id/tab"/>
+    <RadioGroup android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/tab_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text"
+            android:text="문의/신고"/>
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/home_tab_text_gray"
+            android:layout_margin="8dp"/>
+        <RadioButton android:id="@+id/tab_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text"
+            android:text="게시판"/>
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/home_tab_text_gray"
+            android:layout_margin="8dp"/>
+        <RadioButton android:id="@+id/tab_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13sp"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@color/home_tab_text"
+            android:text="홈"/>
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/home_tab_text_gray"
+            android:layout_margin="8dp"/>
+        <RadioButton android:id="@+id/tab_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="13sp"
+            android:textColor="@color/home_tab_text"
+            android:gravity="center"
+            android:text="쪽지"/>
+        <View
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="@color/home_tab_text_gray"
+            android:layout_margin="8dp"/>
+        <RadioButton android:id="@+id/tab_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/home_tab_text"
+            android:text="마이페이지"/>
+    </RadioGroup>
+</RelativeLayout>

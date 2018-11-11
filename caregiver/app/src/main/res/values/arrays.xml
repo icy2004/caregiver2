@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arr_1">
+        <item>신규순</item>
+        <item>평점순</item>
+        <item>시급낮은순</item>
+        <item>시급높은순</item>
+    </string-array>
+
+    <string-array name="arr_2">
+        <item>전체</item>
+        <item>뇌출혈</item>
+        <item>뇌졸중</item>
+        <item>마비</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="arr_3">
+        <item>전체</item>
+        <item>남</item>
+        <item>여</item>
+    </string-array>
+
+    <string-array name="arr_4">
+        <item>뇌출혈</item>
+        <item>뇌졸중</item>
+        <item>마비</item>
+        <item>기타</item>
+    </string-array>
+</resources>
